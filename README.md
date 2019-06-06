@@ -1,4 +1,9 @@
 # cat-lady-api
+
+After downloading, please, in your terminal:
+
+npm install express
+
 Create a VERY SIMPLE API in Node and Express that manipulates an array of in-memory objects.
 
   * HINT: Recall from BEW1.1 that the HTTP methods we use help tell a great story!

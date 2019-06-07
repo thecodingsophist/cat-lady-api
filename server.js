@@ -1,18 +1,21 @@
 // create server
 var express = require('express')
 var app = express()
+var cats = require('./jsonData.js')
 
 // create objects
 const car = {type:"Fiat", model:"500", color:"white"};
 const duck = {type: "animal", model:"DD", color:"white/yellow"}
 const fullList = {car, duck}
 
+// two endpoints which return objects
+
 app.get('/', (req, res) => {
-  res.json({'doglady': {'name': "Ellen", 'numDogs': 5}})
+  res.json(car)
 })
 
 app.get('/all', (req, res) => {
-    res.json()
+    res.json(fullList)
 })
 
 // Start Server

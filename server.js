@@ -8,7 +8,7 @@ const car = {type:"Fiat", model:"500", color:"white"};
 const duck = {type: "animal", model:"DD", color:"white/yellow"}
 const fullList = {car, duck}
 
-// two endpoints which return objects
+// two endpoints which return objects, not in separate file
 
 app.get('/', (req, res) => {
   res.json(car)
